@@ -12,7 +12,7 @@
         <activity android:name=".CanvasActivity"
             android:label = "Canvas Activity" ></activity>
         <activity android:name=".MainActivity"
-            android:label = "Palette Activity">
+            android:label = "Color Changing App">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
