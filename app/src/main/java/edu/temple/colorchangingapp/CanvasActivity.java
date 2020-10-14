@@ -71,6 +71,36 @@ public class CanvasActivity extends AppCompatActivity {
             case "Orange":
                 currentLayout.setBackgroundColor(Color.rgb(255,150,100));
                 break;
+
+
+             //French version. So lazy to bring it to if statement so maintain switch
+            case "rouge":
+                currentLayout.setBackgroundColor(Color.RED);
+                break;
+            case "Noire":
+                currentLayout.setBackgroundColor(Color.BLACK);
+                break;
+            case "Bleue":
+                currentLayout.setBackgroundColor(Color.BLUE);
+                break;
+            case "Gris foncé":
+                currentLayout.setBackgroundColor(Color.DKGRAY);
+                break;
+            case "Blanche":
+                currentLayout.setBackgroundColor(Color.WHITE);
+                break;
+            case "Verte":
+                currentLayout.setBackgroundColor(Color.GREEN);
+                break;
+            case "Gris clair":
+                currentLayout.setBackgroundColor(Color.LTGRAY);
+                break;
+            case "Jaune":
+                currentLayout.setBackgroundColor(Color.YELLOW);
+                break;
+            case "Bleu clair":
+                currentLayout.setBackgroundColor(Color.rgb(0,120,255));
+                break;
             default:
                 break;
 

@@ -12,10 +12,10 @@ import java.util.ArrayList;
 public class GridAdapter extends BaseAdapter {
     int colors[];
     Context context;
-    ArrayList<String> color;
+    String[]color;
 
 
-    public GridAdapter(Context context, ArrayList<String> color){
+    public GridAdapter(Context context, String[] color){
         this.context = context;
         this.color = color;
 
@@ -38,12 +38,12 @@ public class GridAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return color.size();
+        return color.length;
     }
 
     @Override
     public Object getItem(int i) {
-        return color.get(i);
+        return color[i];
     }
 
     @Override

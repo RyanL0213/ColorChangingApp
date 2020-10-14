@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application de changement de couleur</string>
+    <string name="textview">textview</string>
+    <string name="greeting">TextView</string>
+    <string name="click_a_color_above_to_launch_the_canvas">
+Cliquez sur une couleur ci-dessus pour lancer le canevas</string>
+    <string name="palette_activity">activité de palette</string>
+    <string name="Canvas_Activity">activité de toile</string>
+    <string name="Color_Changing_App">
+Activité de la palette</string>
+
+    <string-array name="color_array">
+        <item>rouge</item>
+        <item>Noire</item>
+        <item>Bleue</item>
+        <item>Cyan</item>
+        <item>Gris foncé</item>
+        <item>Blanche</item>
+        <item>Verte</item>
+        <item>Gris clair</item>
+        <item>Magenta</item>
+        <item>Jaune</item>
+        <item>Bleu clair</item>
+        <item>Orange</item>
+
+
+
+    </string-array>
+</resources>
