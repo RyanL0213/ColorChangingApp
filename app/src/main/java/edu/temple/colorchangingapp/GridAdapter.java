@@ -58,7 +58,7 @@ public class GridAdapter extends BaseAdapter {
         if(view==null){
             textview = new TextView(context);
             textview.setTextSize(20);
-            textview.setPadding(15,15,15,15);
+            textview.setPadding(20,20,20,20);
         }
         else
             textview = (TextView)view;

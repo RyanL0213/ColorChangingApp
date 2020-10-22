@@ -1,6 +1,7 @@
 package edu.temple.colorchangingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -13,15 +14,41 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
-    GridView gridview;
+public class MainActivity extends AppCompatActivity implements PaletteFragment.ItemPickedInterface {
+   /* GridView gridview;
     ArrayList<String> color;
     String color_select = "";
+    */
+    String [] colors={"red","yellow","blue","green","1","2","3","4","5","6","7","8"};
+    FragmentManager fm;
+    CanvasFragment detailsFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Resources res = getResources();
+
+        fm = getSupportFragmentManager();
+        detailsFragment = new CanvasFragment();
+        fm
+                .beginTransaction()
+                .add(R.id.container_1,PaletteFragment.newInstance(getResources().getStringArray(R.array.color_array)))
+                .add(R.id.container_2,detailsFragment)
+                .commit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /* Resources res = getResources();
         String[]color = res.getStringArray(R.array.color_array);
         String title = res.getString(R.string.Color_Changing_App);
 
@@ -43,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         color.add("Light Blue");
         color.add("Orange");
 
-         */
+
 
 
         final BaseAdapter adapter = new GridAdapter(this,color);
@@ -63,7 +90,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+*/
 
+    }
 
+    @Override
+    public void itemPicked(int index) {
+            detailsFragment.changename(index);
     }
 }

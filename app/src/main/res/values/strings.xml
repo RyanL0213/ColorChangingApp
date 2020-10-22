@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Color Changing App</string>
-    <string name="textview">textview</string>
     <string name="greeting">TextView</string>
     <string name="click_a_color_above_to_launch_the_canvas">Click a color above to launch the Canvas</string>
     <string name="palette_activity">activity</string>
     <string name="Canvas_Activity">Canvas Activity</string>
     <string name="Color_Changing_App">Palette Activity</string>
+    <string name="textview">TextView</string>
 
     <string-array name="color_array">
         <item>Red</item>
@@ -22,6 +22,6 @@
         <item>Orange</item>
 
 
-
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>
